@@ -4,7 +4,7 @@ An Android-friendly, installable PWA starter for a FaceFusion-inspired face-edit
 
 ## Current status
 
-**Version 0.2: local media selection and previews.** Choose a source portrait and either a target photo or target video. Media is previewed with browser object URLs; this version does not upload files and does not perform AI face swapping.
+**Version 0.3: local media selection, previews, and browser capability diagnostics.** Choose a source portrait and either a target photo or target video. Media is previewed with browser object URLs; this version does not upload files and does not perform AI face swapping.
 
 ## Features in this version
 
@@ -14,6 +14,8 @@ An Android-friendly, installable PWA starter for a FaceFusion-inspired face-edit
 - Local previews and input validation.
 - Installable PWA manifest and service-worker app-shell caching.
 - Clear status messages that do not pretend a render has happened.
+- Local device diagnostic panel for secure context, WebAssembly, WebGPU adapter availability, video playback hints, browser storage quota, and CPU/memory hints.
+- Copyable diagnostic report to help decide the next engine prototype.
 
 ## Important: offline means two different things
 
@@ -21,6 +23,13 @@ An Android-friendly, installable PWA starter for a FaceFusion-inspired face-edit
 - **Offline AI processing:** not implemented. A real face-swap engine, compatible model weights, and a device-compatible runtime are required.
 
 A remote AI server cannot process files without a network connection. To meet the strict offline requirement, the primary engine must eventually run on the phone. A server can be an optional online mode, not a dependency of offline mode.
+
+## Run the device compatibility check
+
+1. Open the deployed app in the latest Chrome on your OPPO F29.
+2. Open **Offline engine readiness** and tap **Run device check**.
+3. Tap **Copy diagnostic report** and paste the report into the ChatGPT conversation to continue the device-specific engine evaluation.
+4. The check uses local browser APIs only; it does not upload media or download AI models. A WebGPU result is only a capability hint, not proof that a face-swap model will fit or perform well.
 
 ## Practical implementation roadmap
 
