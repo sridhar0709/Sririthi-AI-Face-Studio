@@ -53,4 +53,4 @@ GitHub Pages hosts the static app only. It is not an AI inference server and can
 
 Use only faces and footage you have permission to edit. Label synthetic media clearly when sharing. Never commit private photos, videos, model credentials, API keys, or secrets to this repository. Check licences for both inference code and model weights before redistribution.
 
-See [ENGINE_PLAN.md](./ENGINE_PLAN.md) for the implementation design and acceptance checks.
+See [ENGINE_PLAN.md](./ENGINE_PLAN.md) for the implementation design and acceptance checks. See [FACE_SWAP_ENGINE.md](./FACE_SWAP_ENGINE.md) for the first native ONNX engine proof of concept and APK build workflow.
