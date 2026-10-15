@@ -21,9 +21,12 @@ A hosted web page cannot make a remote engine work offline. Service-worker cachi
 - [x] Select a target photo or video.
 - [x] Preview both locally.
 - [x] Validate file types and communicate that AI rendering is not yet connected.
+- [x] Add an on-device capability diagnostic for secure context, WebAssembly, WebGPU adapter, video playback hints, and browser storage quota.
 - [ ] Add file-size/duration guidance and robust error handling.
 
 ### M2: Engine selection gate
+
+**Current experiment:** run the in-app device check on the target OPPO F29, copy the report, and use it to choose whether to prototype browser-based ONNX Runtime Web or a native Android inference wrapper. WebGPU availability alone does not establish model compatibility or adequate speed.
 Before choosing an engine, verify:
 - Source-code and model-weight licences permit the intended use and distribution.
 - Android ARM64 support and available acceleration providers.
