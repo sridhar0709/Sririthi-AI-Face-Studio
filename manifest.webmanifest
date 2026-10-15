@@ -1,0 +1,25 @@
+{
+  "id": "./",
+  "name": "Sririthi AI Face Studio",
+  "short_name": "Sririthi Face",
+  "description": "A privacy-minded, mobile-first face-editing workspace.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#090d1b",
+  "theme_color": "#090d1b",
+  "categories": [
+    "photo",
+    "video",
+    "utilities"
+  ],
+  "icons": [
+    {
+      "src": "./icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
